@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class QuantityMeasurementServiceImplemented implements QuantityMeasurementInterface {
+public class QuantityMeasurementServiceImpl implements IQuantityMeasurement {
 
     @Autowired
-    ConversionRepository conversionRepository;
+    private ConversionRepository conversionRepository;
 
     @Autowired
     private ModelMapper modelMapper;
