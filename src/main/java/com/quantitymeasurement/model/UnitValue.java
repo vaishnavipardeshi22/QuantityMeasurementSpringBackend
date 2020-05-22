@@ -7,23 +7,23 @@ import javax.persistence.Id;
 public class UnitValue {
 
     @Id
-    private String Unit;
+    private String unit;
     private double value;
 
     public UnitValue() {
     }
 
     public UnitValue(String unit, double value) {
-        Unit = unit;
+        this.unit = unit;
         this.value = value;
     }
 
     public String getUnit() {
-        return Unit;
+        return unit;
     }
 
     public void setUnit(String unit) {
-        Unit = unit;
+        unit = unit;
     }
 
     public double getValue() {

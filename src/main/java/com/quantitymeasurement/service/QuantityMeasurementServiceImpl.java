@@ -1,7 +1,6 @@
 package com.quantitymeasurement.service;
 
 import com.quantitymeasurement.repository.ConversionRepository;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +9,6 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurement {
 
     @Autowired
     private ConversionRepository conversionRepository;
-
-    @Autowired
-    private ModelMapper modelMapper;
 
     @Override
     public double getConvertQuantity(String unitType, double convertValue) {
